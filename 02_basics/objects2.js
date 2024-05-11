@@ -41,13 +41,26 @@
 // console.log(obj7[0].name)
 
 //accessing keys and values from the objects
-const obj = {
-    id: 1,
-    name: "Mrunal",
-    email : "abc@gmail.com"
+// const obj = {
+//     id: 1,
+//     name: "Mrunal",
+//     email : "abc@gmail.com"
+// }
+
+// console.log(Object.keys(obj))
+// console.log(Object.values(obj))
+// console.log(Object.entries(obj))
+// console.log(obj.hasOwnProperty('email'))
+
+//Object De-structuring
+const course = {
+    coursename : "javascript",
+    coursefees : "1000",
+    courseteacher : "hitesh"
 }
 
-console.log(Object.keys(obj))
-console.log(Object.values(obj))
-console.log(Object.entries(obj))
-console.log(obj.hasOwnProperty('email'))
+const {courseteacher} = course
+console.log(courseteacher) //method1
+
+const {courseteacher : teacher} = course
+console.log(teacher) //method 2 
